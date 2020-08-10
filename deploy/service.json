@@ -31,7 +31,7 @@
         "selector": {
             "name": "postgres-operator"
         },
-        "type": "ClusterIP",
+        "type": "LoadBalancer",
         "sessionAffinity": "None"
     }
 }

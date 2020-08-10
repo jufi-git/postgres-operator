@@ -12,7 +12,7 @@ Cluster:
   PasswordLength:  24
   Replicas:  0
   ArchiveMode:  false
-  ServiceType:  ClusterIP
+  ServiceType:  LoadBalancer
   BackrestPort:  2022
   BackrestS3Bucket:
   BackrestS3Endpoint:
@@ -29,7 +29,7 @@ Cluster:
   DefaultPgBouncerMemory:
   DisableFSGroup: false
 PrimaryStorage: storageos
-WALStorage:
+WALStorage: 
 BackupStorage: storageos
 ReplicaStorage: storageos
 BackrestStorage: storageos
@@ -57,7 +57,7 @@ Storage:
     AccessMode:  ReadWriteOnce
     Size:  5Gi
     StorageType:  dynamic
-    StorageClass:  fast
+    StorageClass: fast
   primarysite:
     AccessMode:  ReadWriteOnce
     Size:  4G
