@@ -224,7 +224,7 @@ rules:
       storage4_type: "create"
       storage4_supplemental_groups: "65534"
       storage5_name: "storageos"
-      storage5_access_mode: "ReadWriteMany"
+      storage5_access_mode: "ReadWriteOnce"
       storage5_size: "5Gi"
       storage5_type: "dynamic"
       storage5_class: "fast"
